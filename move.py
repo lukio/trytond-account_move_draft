@@ -35,6 +35,7 @@ class Move(metaclass=PoolMeta):
     def delete(cls, moves):
         if not Transaction().context.get('draft_invoices', False):
             invoices = [move for move in moves if move.origin
+                and not isinstance(move.origin, str)
                 and move.origin.__name__ == 'account.invoice'
                 and move.origin.state != 'draft']
 
