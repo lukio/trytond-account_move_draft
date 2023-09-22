@@ -2,11 +2,17 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "model:ir.message,text:msg_delete_moves_invoice"
-msgid "You cannot delete \"%(moves)s\" while the invoice is not in draft."
+msgctxt "field:account.move,allow_draft:"
+msgid "Allow Draft Move"
+msgstr "Permet moviment a esborrany"
+
+msgctxt "model:ir.message,text:msg_draft_closed_period"
+msgid ""
+"You cannot overwrite the account move %(move)s because it has an origin. You"
+" have to deal with it from the source."
 msgstr ""
-"No podeu eliminar \"%(moves)s\" quan està relacionat amb una factura que no "
-"està en esborrany."
+"No podeu passar a esborrany l'assentament %(move)s perquè té un origen. Has "
+"de tractar-ho des de l'orígen."
 
 msgctxt "model:ir.model.button,string:move_draft_button"
 msgid "Draft"

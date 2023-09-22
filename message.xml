@@ -3,8 +3,8 @@
 this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data grouped="1">
-        <record model="ir.message" id="msg_delete_moves_invoice">
-            <field name="text">You cannot delete "%(moves)s" while the invoice is not in draft.</field>
+        <record model="ir.message" id="msg_draft_closed_period">
+            <field name="text">You cannot overwrite the account move %(move)s because it has an origin. You have to deal with it from the source.</field>
         </record>
     </data>
 </tryton>
