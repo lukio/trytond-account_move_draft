@@ -2,9 +2,14 @@
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
 from trytond.pool import Pool
+from . import invoice
 from . import move
 
 def register():
     Pool.register(
         move.Move,
         module='account_move_draft', type_='model')
+    Pool.register(
+        invoice.Invoice,
+        module='account_move_draft', type_='model',
+        depends=['account_invoice'])

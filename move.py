@@ -8,9 +8,6 @@ from trytond.exceptions import UserError
 from trytond.transaction import Transaction
 
 
-__all__ = ['Move']
-
-
 class Move(metaclass=PoolMeta):
     __name__ = 'account.move'
 
